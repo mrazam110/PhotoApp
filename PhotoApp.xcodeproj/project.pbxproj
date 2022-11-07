@@ -30,6 +30,10 @@
 		27A025252918F02400E579FF /* DummyPhotoListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */; };
 		27A0252A2918F06B00E579FF /* DummyPhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025292918F06B00E579FF /* DummyPhotoDTO.swift */; };
 		27A0252D2918F23A00E579FF /* DummyPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0252C2918F23A00E579FF /* DummyPhotoRepository.swift */; };
+		27A025312918F3B500E579FF /* TestDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025302918F3B500E579FF /* TestDependencies.swift */; };
+		27A025342918F3CC00E579FF /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025332918F3CC00E579FF /* MockNetworkLayer.swift */; };
+		27A025392918F44B00E579FF /* photolist.json in Resources */ = {isa = PBXBuildFile; fileRef = 27A025382918F44B00E579FF /* photolist.json */; };
+		27A0253D2918F4C300E579FF /* DummyPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0253C2918F4C300E579FF /* DummyPhotoRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoListEndpoint.swift; sourceTree = "<group>"; };
 		27A025292918F06B00E579FF /* DummyPhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoDTO.swift; sourceTree = "<group>"; };
 		27A0252C2918F23A00E579FF /* DummyPhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoRepository.swift; sourceTree = "<group>"; };
+		27A025302918F3B500E579FF /* TestDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDependencies.swift; sourceTree = "<group>"; };
+		27A025332918F3CC00E579FF /* MockNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkLayer.swift; sourceTree = "<group>"; };
+		27A025382918F44B00E579FF /* photolist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photolist.json; sourceTree = "<group>"; };
+		27A0253C2918F4C300E579FF /* DummyPhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,10 @@
 		27A024E22918E52500E579FF /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				27A0253A2918F4AF00E579FF /* Data */,
+				27A025352918F40C00E579FF /* Resources */,
+				27A0252F2918F3AA00E579FF /* Dependencies */,
+				27A0252E2918F3A200E579FF /* Infrasturcture */,
 				27A024E32918E52500E579FF /* PhotoAppTests.swift */,
 			);
 			path = PhotoAppTests;
@@ -313,6 +325,54 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		27A0252E2918F3A200E579FF /* Infrasturcture */ = {
+			isa = PBXGroup;
+			children = (
+				27A025322918F3C000E579FF /* Networking */,
+			);
+			path = Infrasturcture;
+			sourceTree = "<group>";
+		};
+		27A0252F2918F3AA00E579FF /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				27A025302918F3B500E579FF /* TestDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		27A025322918F3C000E579FF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				27A025332918F3CC00E579FF /* MockNetworkLayer.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		27A025352918F40C00E579FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27A025382918F44B00E579FF /* photolist.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27A0253A2918F4AF00E579FF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				27A0253B2918F4B500E579FF /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		27A0253B2918F4B500E579FF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				27A0253C2918F4C300E579FF /* DummyPhotoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A025392918F44B00E579FF /* photolist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +529,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A025312918F3B500E579FF /* TestDependencies.swift in Sources */,
 				27A024E42918E52500E579FF /* PhotoAppTests.swift in Sources */,
+				27A025342918F3CC00E579FF /* MockNetworkLayer.swift in Sources */,
+				27A0253D2918F4C300E579FF /* DummyPhotoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
