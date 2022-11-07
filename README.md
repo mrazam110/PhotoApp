@@ -13,7 +13,8 @@ Hello! Thank you for taking time to review this code. The goal of the test is to
 - An Error Label or Toast can be added on `DummyPhotosListViewController` and `DummyPhotoDetailViewController` to show error to the user for better user experience
 - UI wasn't focused on this task, improved UI can be implemented
 - Network Request and Image caches can be implemented
-- Multiple schemes and configuration can be created for production use 
+- Multiple schemes and configuration can be created for production use
+- .gitignore file can be added 
 
 ### Just to clear
 This naming `DummyPhoto` is used because it may be conflicted in the idea of the team that we are using native Photo or might be a Photo object which can have image file
