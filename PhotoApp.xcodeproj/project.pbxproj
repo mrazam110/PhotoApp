@@ -20,6 +20,7 @@
 		27A025092918E70D00E579FF /* DefaultDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025082918E70D00E579FF /* DefaultDependencies.swift */; };
 		27A0250B2918E72500E579FF /* DependenciesContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0250A2918E72500E579FF /* DependenciesContext.swift */; };
 		27A0250D2918E78900E579FF /* DependenciesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0250C2918E78900E579FF /* DependenciesProtocol.swift */; };
+		27A0250F2918E82200E579FF /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0250E2918E82200E579FF /* AppFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		27A025082918E70D00E579FF /* DefaultDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDependencies.swift; sourceTree = "<group>"; };
 		27A0250A2918E72500E579FF /* DependenciesContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesContext.swift; sourceTree = "<group>"; };
 		27A0250C2918E78900E579FF /* DependenciesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesProtocol.swift; sourceTree = "<group>"; };
+		27A0250E2918E82200E579FF /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			children = (
 				27A024CC2918E52400E579FF /* AppDelegate.swift */,
 				27A024CE2918E52400E579FF /* SceneDelegate.swift */,
+				27A0250E2918E82200E579FF /* AppFlowCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A0250F2918E82200E579FF /* AppFlowCoordinator.swift in Sources */,
 				27A025092918E70D00E579FF /* DefaultDependencies.swift in Sources */,
 				27A025062918E69A00E579FF /* Coordinator.swift in Sources */,
 				27A024D12918E52400E579FF /* ViewController.swift in Sources */,
