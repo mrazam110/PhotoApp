@@ -26,6 +26,9 @@
 		27A025182918EC0900E579FF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025172918EC0900E579FF /* NetworkError.swift */; };
 		27A0251C2918EC3A00E579FF /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0251B2918EC3A00E579FF /* EndpointProvider.swift */; };
 		27A0251E2918EC4E00E579FF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0251D2918EC4E00E579FF /* Network.swift */; };
+		27A025212918EDCC00E579FF /* DummyPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025202918EDCC00E579FF /* DummyPhoto.swift */; };
+		27A025252918F02400E579FF /* DummyPhotoListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */; };
+		27A0252A2918F06B00E579FF /* DummyPhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025292918F06B00E579FF /* DummyPhotoDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		27A025172918EC0900E579FF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		27A0251B2918EC3A00E579FF /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
 		27A0251D2918EC4E00E579FF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		27A025202918EDCC00E579FF /* DummyPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhoto.swift; sourceTree = "<group>"; };
+		27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoListEndpoint.swift; sourceTree = "<group>"; };
+		27A025292918F06B00E579FF /* DummyPhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,7 @@
 		27A024FF2918E5C600E579FF /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				27A0251F2918ED9D00E579FF /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 		27A025012918E5D000E579FF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				27A025222918EFF500E579FF /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -259,6 +267,39 @@
 				27A0251B2918EC3A00E579FF /* EndpointProvider.swift */,
 			);
 			path = Contracts;
+			sourceTree = "<group>";
+		};
+		27A0251F2918ED9D00E579FF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				27A025202918EDCC00E579FF /* DummyPhoto.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		27A025222918EFF500E579FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27A025282918F05B00E579FF /* DTO */,
+				27A025232918F00100E579FF /* Dummy Photos */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27A025232918F00100E579FF /* Dummy Photos */ = {
+			isa = PBXGroup;
+			children = (
+				27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */,
+			);
+			path = "Dummy Photos";
+			sourceTree = "<group>";
+		};
+		27A025282918F05B00E579FF /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				27A025292918F06B00E579FF /* DummyPhotoDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,14 +434,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A0251E2918EC4E00E579FF /* Network.swift in Sources */,
+				27A025212918EDCC00E579FF /* DummyPhoto.swift in Sources */,
 				27A0250F2918E82200E579FF /* AppFlowCoordinator.swift in Sources */,
 				27A0251C2918EC3A00E579FF /* EndpointProvider.swift in Sources */,
 				27A025132918EBB800E579FF /* SessionManagerStore.swift in Sources */,
 				27A025092918E70D00E579FF /* DefaultDependencies.swift in Sources */,
 				27A025062918E69A00E579FF /* Coordinator.swift in Sources */,
+				27A025252918F02400E579FF /* DummyPhotoListEndpoint.swift in Sources */,
 				27A025162918EBE300E579FF /* Endpoint.swift in Sources */,
 				27A024D12918E52400E579FF /* ViewController.swift in Sources */,
 				27A024CD2918E52400E579FF /* AppDelegate.swift in Sources */,
+				27A0252A2918F06B00E579FF /* DummyPhotoDTO.swift in Sources */,
 				27A0250B2918E72500E579FF /* DependenciesContext.swift in Sources */,
 				27A024CF2918E52400E579FF /* SceneDelegate.swift in Sources */,
 				27A025182918EC0900E579FF /* NetworkError.swift in Sources */,
