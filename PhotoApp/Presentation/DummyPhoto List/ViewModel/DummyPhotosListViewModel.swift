@@ -5,7 +5,7 @@
 //  Created by Muhammad Raza on 07/11/2022.
 //
 
-import UIKit
+import Foundation
 
 protocol DummyPhotosListViewModelInput {
     func viewDidLoad()
