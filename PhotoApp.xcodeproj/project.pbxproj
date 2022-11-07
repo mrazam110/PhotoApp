@@ -21,6 +21,11 @@
 		27A0250B2918E72500E579FF /* DependenciesContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0250A2918E72500E579FF /* DependenciesContext.swift */; };
 		27A0250D2918E78900E579FF /* DependenciesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0250C2918E78900E579FF /* DependenciesProtocol.swift */; };
 		27A0250F2918E82200E579FF /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0250E2918E82200E579FF /* AppFlowCoordinator.swift */; };
+		27A025132918EBB800E579FF /* SessionManagerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025122918EBB800E579FF /* SessionManagerStore.swift */; };
+		27A025162918EBE300E579FF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025152918EBE300E579FF /* Endpoint.swift */; };
+		27A025182918EC0900E579FF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025172918EC0900E579FF /* NetworkError.swift */; };
+		27A0251C2918EC3A00E579FF /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0251B2918EC3A00E579FF /* EndpointProvider.swift */; };
+		27A0251E2918EC4E00E579FF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0251D2918EC4E00E579FF /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		27A0250A2918E72500E579FF /* DependenciesContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesContext.swift; sourceTree = "<group>"; };
 		27A0250C2918E78900E579FF /* DependenciesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesProtocol.swift; sourceTree = "<group>"; };
 		27A0250E2918E82200E579FF /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		27A025122918EBB800E579FF /* SessionManagerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerStore.swift; sourceTree = "<group>"; };
+		27A025152918EBE300E579FF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		27A025172918EC0900E579FF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		27A0251B2918EC3A00E579FF /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		27A0251D2918EC4E00E579FF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,7 @@
 		27A024FE2918E5BE00E579FF /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				27A025102918EB8E00E579FF /* Networking */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -212,6 +223,42 @@
 				27A0250C2918E78900E579FF /* DependenciesProtocol.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		27A025102918EB8E00E579FF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				27A0251A2918EC2D00E579FF /* Contracts */,
+				27A025142918EBD100E579FF /* Model */,
+				27A025112918EB9600E579FF /* Services */,
+				27A0251D2918EC4E00E579FF /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		27A025112918EB9600E579FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27A025122918EBB800E579FF /* SessionManagerStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27A025142918EBD100E579FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27A025152918EBE300E579FF /* Endpoint.swift */,
+				27A025172918EC0900E579FF /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27A0251A2918EC2D00E579FF /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				27A0251B2918EC3A00E579FF /* EndpointProvider.swift */,
+			);
+			path = Contracts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,13 +392,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A0251E2918EC4E00E579FF /* Network.swift in Sources */,
 				27A0250F2918E82200E579FF /* AppFlowCoordinator.swift in Sources */,
+				27A0251C2918EC3A00E579FF /* EndpointProvider.swift in Sources */,
+				27A025132918EBB800E579FF /* SessionManagerStore.swift in Sources */,
 				27A025092918E70D00E579FF /* DefaultDependencies.swift in Sources */,
 				27A025062918E69A00E579FF /* Coordinator.swift in Sources */,
+				27A025162918EBE300E579FF /* Endpoint.swift in Sources */,
 				27A024D12918E52400E579FF /* ViewController.swift in Sources */,
 				27A024CD2918E52400E579FF /* AppDelegate.swift in Sources */,
 				27A0250B2918E72500E579FF /* DependenciesContext.swift in Sources */,
 				27A024CF2918E52400E579FF /* SceneDelegate.swift in Sources */,
+				27A025182918EC0900E579FF /* NetworkError.swift in Sources */,
 				27A0250D2918E78900E579FF /* DependenciesProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
