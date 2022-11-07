@@ -30,4 +30,23 @@ final class MockDummyPhotoRepositoryTests: XCTestCase {
         
         waitForExpectations(timeout: 2)
     }
+    
+    func testDummyPhotoById() throws {
+        let expectation = expectation(description: "DefaultDummyPhotoRepository's fetchPhotoById response should return success")
+        
+        let repository = DefaultDummyPhotoRepository(ctx: context)
+        
+        repository.fetchDummyPhoto(by: 1) { result in
+            switch result {
+            case .success(let response):
+                let dummyPhoto = response
+                XCTAssertTrue(dummyPhoto.albumId == 1, "DummyPhoto ID unmatched")
+            case .failure(_):
+                XCTAssertTrue(false, "This shouldn't response failure")
+            }
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 2)
+    }
 }

@@ -20,6 +20,11 @@ final class MockNetworkLayer: NetworkManager {
                 data = jsonData
                 error = nil
             }
+        } else if request is DummyPhotoByIdEndpointProvider {
+            if let url = Bundle(for: type(of: self)).url(forResource: "photo_by_id", withExtension: "json"), let jsonData = try? Data(contentsOf: url) {
+                data = jsonData
+                error = nil
+            }
         }
         
         if let error = error {
