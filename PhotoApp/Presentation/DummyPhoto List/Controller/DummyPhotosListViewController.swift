@@ -52,3 +52,7 @@ class DummyPhotosListViewController: UIViewController {
 }
 
 // MARK: - UITableViewDelegate and UITableViewDataSource
+
+extension DummyPhotosListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+}

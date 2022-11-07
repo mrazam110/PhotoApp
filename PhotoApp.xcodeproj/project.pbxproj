@@ -41,6 +41,9 @@
 		27A0254F2918FA9600E579FF /* DummyPhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0254D2918FA9600E579FF /* DummyPhotosListViewController.swift */; };
 		27A025502918FA9600E579FF /* DummyPhotosListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A0254E2918FA9600E579FF /* DummyPhotosListViewController.xib */; };
 		27A025552918FB1E00E579FF /* DummyPhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025542918FB1E00E579FF /* DummyPhotosListViewModel.swift */; };
+		27A025582918FF1200E579FF /* DummyPhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025562918FF1200E579FF /* DummyPhotoListCell.swift */; };
+		27A025592918FF1200E579FF /* DummyPhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A025572918FF1200E579FF /* DummyPhotoListCell.xib */; };
+		27A0255B2919010C00E579FF /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0255A2919010C00E579FF /* UIImageView+Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		27A0254D2918FA9600E579FF /* DummyPhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotosListViewController.swift; sourceTree = "<group>"; };
 		27A0254E2918FA9600E579FF /* DummyPhotosListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyPhotosListViewController.xib; sourceTree = "<group>"; };
 		27A025542918FB1E00E579FF /* DummyPhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotosListViewModel.swift; sourceTree = "<group>"; };
+		27A025562918FF1200E579FF /* DummyPhotoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoListCell.swift; sourceTree = "<group>"; };
+		27A025572918FF1200E579FF /* DummyPhotoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyPhotoListCell.xib; sourceTree = "<group>"; };
+		27A0255A2919010C00E579FF /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				27A0254A2918FA5B00E579FF /* UITableView+Reusable.swift */,
+				27A0255A2919010C00E579FF /* UIImageView+Download.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -438,6 +445,8 @@
 		27A025522918FAF800E579FF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				27A025562918FF1200E579FF /* DummyPhotoListCell.swift */,
+				27A025572918FF1200E579FF /* DummyPhotoListCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -557,6 +566,7 @@
 				27A024D92918E52500E579FF /* LaunchScreen.storyboard in Resources */,
 				27A024D62918E52500E579FF /* Assets.xcassets in Resources */,
 				27A025502918FA9600E579FF /* DummyPhotosListViewController.xib in Resources */,
+				27A025592918FF1200E579FF /* DummyPhotoListCell.xib in Resources */,
 				27A024D42918E52400E579FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +601,7 @@
 				27A0251C2918EC3A00E579FF /* EndpointProvider.swift in Sources */,
 				27A0253F2918F6A100E579FF /* DummyPhotoByIdEndpoint.swift in Sources */,
 				27A025132918EBB800E579FF /* SessionManagerStore.swift in Sources */,
+				27A0255B2919010C00E579FF /* UIImageView+Download.swift in Sources */,
 				27A025092918E70D00E579FF /* DefaultDependencies.swift in Sources */,
 				27A025062918E69A00E579FF /* Coordinator.swift in Sources */,
 				27A025252918F02400E579FF /* DummyPhotoListEndpoint.swift in Sources */,
@@ -605,6 +616,7 @@
 				27A025472918F9F900E579FF /* NibLoadableView.swift in Sources */,
 				27A024CF2918E52400E579FF /* SceneDelegate.swift in Sources */,
 				27A025182918EC0900E579FF /* NetworkError.swift in Sources */,
+				27A025582918FF1200E579FF /* DummyPhotoListCell.swift in Sources */,
 				27A0252D2918F23A00E579FF /* DummyPhotoRepository.swift in Sources */,
 				27A0250D2918E78900E579FF /* DependenciesProtocol.swift in Sources */,
 			);
