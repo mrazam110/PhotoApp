@@ -35,6 +35,12 @@
 		27A0253D2918F4C300E579FF /* DummyPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0253C2918F4C300E579FF /* DummyPhotoRepository.swift */; };
 		27A0253F2918F6A100E579FF /* DummyPhotoByIdEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0253E2918F6A100E579FF /* DummyPhotoByIdEndpoint.swift */; };
 		27A025412918F88B00E579FF /* photo_by_id.json in Resources */ = {isa = PBXBuildFile; fileRef = 27A025402918F88B00E579FF /* photo_by_id.json */; };
+		27A025472918F9F900E579FF /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025462918F9F900E579FF /* NibLoadableView.swift */; };
+		27A025492918FA0200E579FF /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025482918FA0200E579FF /* ReusableView.swift */; };
+		27A0254B2918FA5B00E579FF /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0254A2918FA5B00E579FF /* UITableView+Reusable.swift */; };
+		27A0254F2918FA9600E579FF /* DummyPhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0254D2918FA9600E579FF /* DummyPhotosListViewController.swift */; };
+		27A025502918FA9600E579FF /* DummyPhotosListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A0254E2918FA9600E579FF /* DummyPhotosListViewController.xib */; };
+		27A025552918FB1E00E579FF /* DummyPhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025542918FB1E00E579FF /* DummyPhotosListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,12 @@
 		27A0253C2918F4C300E579FF /* DummyPhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoRepository.swift; sourceTree = "<group>"; };
 		27A0253E2918F6A100E579FF /* DummyPhotoByIdEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoByIdEndpoint.swift; sourceTree = "<group>"; };
 		27A025402918F88B00E579FF /* photo_by_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photo_by_id.json; sourceTree = "<group>"; };
+		27A025462918F9F900E579FF /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		27A025482918FA0200E579FF /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		27A0254A2918FA5B00E579FF /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		27A0254D2918FA9600E579FF /* DummyPhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotosListViewController.swift; sourceTree = "<group>"; };
+		27A0254E2918FA9600E579FF /* DummyPhotosListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyPhotosListViewController.xib; sourceTree = "<group>"; };
+		27A025542918FB1E00E579FF /* DummyPhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotosListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +195,8 @@
 		27A024FD2918E5B800E579FF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				27A0254C2918FA6A00E579FF /* DummyPhoto List */,
+				27A025422918F9C400E579FF /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -376,6 +390,66 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		27A025422918F9C400E579FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27A025442918F9DB00E579FF /* Protocols */,
+				27A025432918F9D200E579FF /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		27A025432918F9D200E579FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27A0254A2918FA5B00E579FF /* UITableView+Reusable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27A025442918F9DB00E579FF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				27A025462918F9F900E579FF /* NibLoadableView.swift */,
+				27A025482918FA0200E579FF /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		27A0254C2918FA6A00E579FF /* DummyPhoto List */ = {
+			isa = PBXGroup;
+			children = (
+				27A025532918FAFD00E579FF /* ViewModel */,
+				27A025522918FAF800E579FF /* Cells */,
+				27A025512918FAED00E579FF /* Controller */,
+			);
+			path = "DummyPhoto List";
+			sourceTree = "<group>";
+		};
+		27A025512918FAED00E579FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27A0254D2918FA9600E579FF /* DummyPhotosListViewController.swift */,
+				27A0254E2918FA9600E579FF /* DummyPhotosListViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27A025522918FAF800E579FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		27A025532918FAFD00E579FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27A025542918FB1E00E579FF /* DummyPhotosListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -482,6 +556,7 @@
 			files = (
 				27A024D92918E52500E579FF /* LaunchScreen.storyboard in Resources */,
 				27A024D62918E52500E579FF /* Assets.xcassets in Resources */,
+				27A025502918FA9600E579FF /* DummyPhotosListViewController.xib in Resources */,
 				27A024D42918E52400E579FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A0254F2918FA9600E579FF /* DummyPhotosListViewController.swift in Sources */,
 				27A0251E2918EC4E00E579FF /* Network.swift in Sources */,
 				27A025212918EDCC00E579FF /* DummyPhoto.swift in Sources */,
 				27A0250F2918E82200E579FF /* AppFlowCoordinator.swift in Sources */,
@@ -520,9 +596,13 @@
 				27A025252918F02400E579FF /* DummyPhotoListEndpoint.swift in Sources */,
 				27A025162918EBE300E579FF /* Endpoint.swift in Sources */,
 				27A024D12918E52400E579FF /* ViewController.swift in Sources */,
+				27A025492918FA0200E579FF /* ReusableView.swift in Sources */,
 				27A024CD2918E52400E579FF /* AppDelegate.swift in Sources */,
+				27A025552918FB1E00E579FF /* DummyPhotosListViewModel.swift in Sources */,
+				27A0254B2918FA5B00E579FF /* UITableView+Reusable.swift in Sources */,
 				27A0252A2918F06B00E579FF /* DummyPhotoDTO.swift in Sources */,
 				27A0250B2918E72500E579FF /* DependenciesContext.swift in Sources */,
+				27A025472918F9F900E579FF /* NibLoadableView.swift in Sources */,
 				27A024CF2918E52400E579FF /* SceneDelegate.swift in Sources */,
 				27A025182918EC0900E579FF /* NetworkError.swift in Sources */,
 				27A0252D2918F23A00E579FF /* DummyPhotoRepository.swift in Sources */,
