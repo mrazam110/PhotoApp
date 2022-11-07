@@ -99,13 +99,15 @@
 		27A024CB2918E52400E579FF /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
-				27A024CC2918E52400E579FF /* AppDelegate.swift */,
-				27A024CE2918E52400E579FF /* SceneDelegate.swift */,
+				27A025032918E5DC00E579FF /* Application */,
+				27A025022918E5D700E579FF /* Common */,
+				27A025012918E5D000E579FF /* Data */,
+				27A024FF2918E5C600E579FF /* Domain */,
+				27A024FE2918E5BE00E579FF /* Infrastructure */,
+				27A024FD2918E5B800E579FF /* Presentation */,
+				27A024FC2918E5B300E579FF /* Resources */,
 				27A024D02918E52400E579FF /* ViewController.swift */,
 				27A024D22918E52400E579FF /* Main.storyboard */,
-				27A024D52918E52500E579FF /* Assets.xcassets */,
-				27A024D72918E52500E579FF /* LaunchScreen.storyboard */,
-				27A024DA2918E52500E579FF /* Info.plist */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -125,6 +127,60 @@
 				27A024EF2918E52500E579FF /* PhotoAppUITestsLaunchTests.swift */,
 			);
 			path = PhotoAppUITests;
+			sourceTree = "<group>";
+		};
+		27A024FC2918E5B300E579FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27A024D52918E52500E579FF /* Assets.xcassets */,
+				27A024D72918E52500E579FF /* LaunchScreen.storyboard */,
+				27A024DA2918E52500E579FF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27A024FD2918E5B800E579FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		27A024FE2918E5BE00E579FF /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		27A024FF2918E5C600E579FF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		27A025012918E5D000E579FF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		27A025022918E5D700E579FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		27A025032918E5DC00E579FF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				27A024CC2918E52400E579FF /* AppDelegate.swift */,
+				27A024CE2918E52400E579FF /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoApp/Info.plist;
+				INFOPLIST_FILE = PhotoApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -465,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoApp/Info.plist;
+				INFOPLIST_FILE = PhotoApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
