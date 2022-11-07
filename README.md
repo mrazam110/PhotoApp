@@ -7,6 +7,7 @@ Hello! Thank you for taking time to review this code. The goal of the test is to
 - MVVM-C was used in this project
 - In unit test, mock network layer was used to get the data from json file but for app development normal network request has been consumed
 - Unit test for `DummyPhotoRepository` was written to showcase 
+- Small and frequent commits approach is used while developing and designing the code and architecture
 
 ### What can further be done
 - ActivityIndicator can be added on `DummyPhotosListViewController` and `DummyPhotoDetailViewController` to show that data is fetching from server
