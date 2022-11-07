@@ -29,6 +29,8 @@ final class DefaultDummyPhotosListViewModel: DummyPhotosListViewModel {
     private(set) var dummyPhotos: [DummyPhoto] = []
     private var ctx: Context
     
+    private var dummyPhotosRepository: DummyPhotoRepository
+    
     // MARK: - Computed Properties
     
     var screenTitle: String {
@@ -43,17 +45,27 @@ final class DefaultDummyPhotosListViewModel: DummyPhotosListViewModel {
     
     init(ctx: Context) {
         self.ctx = ctx
+        self.dummyPhotosRepository = DefaultDummyPhotoRepository(ctx: ctx)
     }
     
     // MARK: - Input Methods
     
     func viewDidLoad() {
-        
+        dummyPhotosRepository.fetchDummyPhotoList { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let photos):
+                self.dummyPhotos = photos
+            case .failure(let error):
+                print(error)
+            }
+            self.reloadData?()
+        }
     }
     
     func photoSelected(at index: Int) {
         
     }
     
-    typealias Context = HasNetworkService
+    typealias Context = DummyPhotoListContext
 }

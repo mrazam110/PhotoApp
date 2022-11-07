@@ -21,7 +21,7 @@ class DummyPhotosListViewController: UIViewController {
     
     init(viewModel: DummyPhotosListViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: "DummyPhotosListViewModel", bundle: .main)
+        super.init(nibName: "DummyPhotosListViewController", bundle: .main)
     }
     
     required init?(coder: NSCoder) {
@@ -33,6 +33,9 @@ class DummyPhotosListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupViews()
+        bindViewModel()
+        registerCells()
         viewModel.viewDidLoad()
     }
     
@@ -42,12 +45,16 @@ class DummyPhotosListViewController: UIViewController {
         navigationItem.title = viewModel.screenTitle
     }
     
-    private func  bindViewModel() {
+    private func bindViewModel() {
         viewModel.reloadData = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
         }
+    }
+    
+    private func registerCells() {
+        tableView.register(DummyPhotoListCell.self)
     }
 }
 
@@ -55,4 +62,22 @@ class DummyPhotosListViewController: UIViewController {
 
 extension DummyPhotosListViewController: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.dummyPhotos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DummyPhotoListCell", for: indexPath) as? DummyPhotoListCell else {
+            return UITableViewCell()
+        }
+        
+        let data = DummyPhotoListCellData.map(from: viewModel.dummyPhotos[indexPath.row])
+        cell.configure(with: data)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

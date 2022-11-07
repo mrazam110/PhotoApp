@@ -26,6 +26,8 @@ class DummyPhotoListCell: UITableViewCell {
     @IBOutlet private weak var thumbnailImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     
+    // MARK: - Configure
+    
     func configure(with data: DummyPhotoListCellData) {
         titleLabel.text = data.title
         if let imageURL = data.thumbnail {

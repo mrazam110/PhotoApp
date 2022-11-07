@@ -7,19 +7,18 @@
 
 import UIKit
 
-final class AppFlowCoordinator: Coordinator {
+final class AppFlowCoordinator: BaseCoordinator<UINavigationController> {
     
     private let appContext: Context
     
-    var navigationController: UINavigationController
-    
     init(ctx: Context, navigationController: UINavigationController) {
         self.appContext = ctx
-        self.navigationController = navigationController
+        super.init(rootViewController: navigationController)
     }
     
-    func start() {
-        
+    override func start() {
+        let dummyPhotosListCoordinator = DummyPhotosListCoordinator(ctx: appContext, controller: rootViewController)
+        dummyPhotosListCoordinator.start()
     }
     
     typealias Context = AllDependencies

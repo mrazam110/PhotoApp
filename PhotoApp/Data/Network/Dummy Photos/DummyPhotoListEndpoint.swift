@@ -16,7 +16,7 @@ struct DummyPhotosEndpointProvider: EndpointProvider {
     }
     
     var endpoint: Endpoint {
-        Endpoint(method: .get, api: API(baseURL: baseURL, path: ["photo"]))
+        Endpoint(method: .get, api: API(baseURL: baseURL, path: ["photos"]))
     }
     
     typealias Response = [DummyPhotoDTO]
