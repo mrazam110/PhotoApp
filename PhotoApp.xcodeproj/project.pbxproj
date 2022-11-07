@@ -29,6 +29,7 @@
 		27A025212918EDCC00E579FF /* DummyPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025202918EDCC00E579FF /* DummyPhoto.swift */; };
 		27A025252918F02400E579FF /* DummyPhotoListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */; };
 		27A0252A2918F06B00E579FF /* DummyPhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025292918F06B00E579FF /* DummyPhotoDTO.swift */; };
+		27A0252D2918F23A00E579FF /* DummyPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0252C2918F23A00E579FF /* DummyPhotoRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		27A025202918EDCC00E579FF /* DummyPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhoto.swift; sourceTree = "<group>"; };
 		27A025242918F02400E579FF /* DummyPhotoListEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoListEndpoint.swift; sourceTree = "<group>"; };
 		27A025292918F06B00E579FF /* DummyPhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoDTO.swift; sourceTree = "<group>"; };
+		27A0252C2918F23A00E579FF /* DummyPhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		27A025012918E5D000E579FF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				27A0252B2918F20A00E579FF /* Repositories */,
 				27A025222918EFF500E579FF /* Network */,
 			);
 			path = Data;
@@ -300,6 +303,14 @@
 				27A025292918F06B00E579FF /* DummyPhotoDTO.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		27A0252B2918F20A00E579FF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				27A0252C2918F23A00E579FF /* DummyPhotoRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +459,7 @@
 				27A0250B2918E72500E579FF /* DependenciesContext.swift in Sources */,
 				27A024CF2918E52400E579FF /* SceneDelegate.swift in Sources */,
 				27A025182918EC0900E579FF /* NetworkError.swift in Sources */,
+				27A0252D2918F23A00E579FF /* DummyPhotoRepository.swift in Sources */,
 				27A0250D2918E78900E579FF /* DependenciesProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

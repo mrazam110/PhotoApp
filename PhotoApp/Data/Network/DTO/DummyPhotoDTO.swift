@@ -14,3 +14,9 @@ struct DummyPhotoDTO: DTO {
     let url: String
     let thumbnailUrl: String
 }
+
+extension DummyPhoto {
+    static func map(from dto: DummyPhotoDTO) -> DummyPhoto {
+        DummyPhoto(id: dto.id, albumId: dto.albumId, title: dto.title, url: dto.url, thumbnail: dto.thumbnailUrl)
+    }
+}
