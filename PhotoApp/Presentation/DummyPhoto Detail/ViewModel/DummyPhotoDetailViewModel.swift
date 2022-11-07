@@ -87,5 +87,5 @@ final class DefaultDummyPhotoDetailViewModel: DummyPhotoDetailViewModel {
         }
     }
     
-    typealias Context = DummyPhotoListContext
+    typealias Context = DummyPhotoDetailContext
 }

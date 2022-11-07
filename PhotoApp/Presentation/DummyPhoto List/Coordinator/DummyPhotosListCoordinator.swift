@@ -17,7 +17,7 @@ class DummyPhotosListCoordinator: BaseCoordinator<UINavigationController> {
     }
     
     override func start() {
-        let viewModel = DefaultDummyPhotosListViewModel(ctx: ctx)
+        let viewModel = DefaultDummyPhotosListViewModel(ctx: ctx, navigator: self)
         let controller = DummyPhotosListViewController(viewModel: viewModel)
         rootViewController.pushViewController(controller, animated: false)
     }
@@ -25,4 +25,15 @@ class DummyPhotosListCoordinator: BaseCoordinator<UINavigationController> {
     typealias Context = DummyPhotoListContext
 }
 
+extension DummyPhotosListCoordinator: DummyPhotosListNavigator {
+    func navigateToDetail(with id: Int) {
+        let detailCoordinator = DummyPhotoDetailCoordinator(ctx: ctx, controller: rootViewController, dummyPhotoId: id)
+        detailCoordinator.start()
+    }
+}
+
 typealias DummyPhotoListContext = HasNetworkService
+
+protocol DummyPhotosListNavigator: AnyObject {
+    func navigateToDetail(with id: Int)
+}

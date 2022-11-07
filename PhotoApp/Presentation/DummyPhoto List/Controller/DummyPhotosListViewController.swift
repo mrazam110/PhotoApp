@@ -78,6 +78,6 @@ extension DummyPhotosListViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        viewModel.photoSelected(at: indexPath.row)
     }
 }

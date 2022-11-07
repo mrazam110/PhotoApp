@@ -50,6 +50,7 @@
 		27A025682919159D00E579FF /* DummyPhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A025662919159D00E579FF /* DummyPhotoDetailViewController.xib */; };
 		27A0256A291916B400E579FF /* DummyPhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A02569291916B400E579FF /* DummyPhotoDetailViewModel.swift */; };
 		27A0256C2919180300E579FF /* Int+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0256B2919180300E579FF /* Int+String.swift */; };
+		27A0256E29191A5500E579FF /* DummyPhotoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0256D29191A5500E579FF /* DummyPhotoDetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		27A025662919159D00E579FF /* DummyPhotoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyPhotoDetailViewController.xib; sourceTree = "<group>"; };
 		27A02569291916B400E579FF /* DummyPhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoDetailViewModel.swift; sourceTree = "<group>"; };
 		27A0256B2919180300E579FF /* Int+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+String.swift"; sourceTree = "<group>"; };
+		27A0256D29191A5500E579FF /* DummyPhotoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPhotoDetailCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,6 +515,7 @@
 		27A025642919158600E579FF /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				27A0256D29191A5500E579FF /* DummyPhotoDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A0256C2919180300E579FF /* Int+String.swift in Sources */,
+				27A0256E29191A5500E579FF /* DummyPhotoDetailCoordinator.swift in Sources */,
 				27A0254F2918FA9600E579FF /* DummyPhotosListViewController.swift in Sources */,
 				27A0251E2918EC4E00E579FF /* Network.swift in Sources */,
 				27A025212918EDCC00E579FF /* DummyPhoto.swift in Sources */,

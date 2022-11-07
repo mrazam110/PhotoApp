@@ -49,7 +49,9 @@ class DummyPhotoDetailViewController: UIViewController {
     
     func bindViewModel() {
         viewModel.reloadData = { [weak self] in
-            self?.updateData()
+            DispatchQueue.main.async {
+                self?.updateData()
+            }
         }
     }
     

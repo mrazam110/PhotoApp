@@ -31,6 +31,8 @@ final class DefaultDummyPhotosListViewModel: DummyPhotosListViewModel {
     
     private var dummyPhotosRepository: DummyPhotoRepository
     
+    private var navigator: DummyPhotosListNavigator?
+    
     // MARK: - Computed Properties
     
     var screenTitle: String {
@@ -43,8 +45,9 @@ final class DefaultDummyPhotosListViewModel: DummyPhotosListViewModel {
     
     // MARK: - Inits
     
-    init(ctx: Context) {
+    init(ctx: Context, navigator: DummyPhotosListNavigator) {
         self.ctx = ctx
+        self.navigator = navigator
         self.dummyPhotosRepository = DefaultDummyPhotoRepository(ctx: ctx)
     }
     
@@ -64,7 +67,8 @@ final class DefaultDummyPhotosListViewModel: DummyPhotosListViewModel {
     }
     
     func photoSelected(at index: Int) {
-        
+        let dummyPhotoId = dummyPhotos[index].id
+        navigator?.navigateToDetail(with: dummyPhotoId)
     }
     
     typealias Context = DummyPhotoListContext
