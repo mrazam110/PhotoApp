@@ -9,4 +9,7 @@ import Foundation
 
 final class DefaultDependencies: AllDependencies {
     
+    // MARK: - HasNetworkService Implementation
+    let baseURL = BaseURL(scheme: "https", host: "jsonplaceholder.typicode.com")
+    let networkManager: NetworkManager = DefaultNetworkManager(sessionManager: SessionManagerStore())
 }

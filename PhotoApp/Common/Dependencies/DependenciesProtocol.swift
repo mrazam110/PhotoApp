@@ -9,4 +9,9 @@ import Foundation
 
 protocol EmptyDependency {}
 
-protocol AllDependencies: EmptyDependency {}
+protocol AllDependencies: EmptyDependency, HasNetworkService {}
+
+protocol HasNetworkService {
+    var baseURL: BaseURL { get }
+    var networkManager: NetworkManager { get }
+}
