@@ -16,6 +16,7 @@
 		27A024E42918E52500E579FF /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A024E32918E52500E579FF /* PhotoAppTests.swift */; };
 		27A024EE2918E52500E579FF /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A024ED2918E52500E579FF /* PhotoAppUITests.swift */; };
 		27A024F02918E52500E579FF /* PhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A024EF2918E52500E579FF /* PhotoAppUITestsLaunchTests.swift */; };
+		27A025062918E69A00E579FF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A025052918E69A00E579FF /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		27A024E92918E52500E579FF /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A024ED2918E52500E579FF /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		27A024EF2918E52500E579FF /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27A025052918E69A00E579FF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		27A025022918E5D700E579FF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				27A025042918E69000E579FF /* Contracts */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -181,6 +184,14 @@
 				27A024CE2918E52400E579FF /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		27A025042918E69000E579FF /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				27A025052918E69A00E579FF /* Coordinator.swift */,
+			);
+			path = Contracts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A025062918E69A00E579FF /* Coordinator.swift in Sources */,
 				27A024D12918E52400E579FF /* ViewController.swift in Sources */,
 				27A024CD2918E52400E579FF /* AppDelegate.swift in Sources */,
 				27A024CF2918E52400E579FF /* SceneDelegate.swift in Sources */,
